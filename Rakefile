@@ -16,7 +16,6 @@ end
 namespace :cla do
   desc "Set up pull request creation web hook to notify the CLA Enforcer"
   task :enforce, [:repository] do |t, args|
-    require 'cla'
     print args['repository']
     p CLA.github.subscribe(args['repository'], '/github')
   end
