@@ -86,6 +86,8 @@ module CLA
       puts @github_hostname
       puts @hostname
       puts @github_verifier
+      puts repo
+      puts uri
       res << @octokit.subscribe(File.join(@github_hostname, repo, 'events/pull_request'), File.join(@hostname, uri), @github_verifier)
       res << @octokit.subscribe(File.join(@github_hostname, repo, 'events/issue_comment'), File.join(@hostname, uri), @github_verifier)
       res << @octokit.add_label(repo, @label_name, @label_color) rescue 'label exists'
