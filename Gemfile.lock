@@ -26,9 +26,8 @@ GEM
       sawyer (~> 0.6.0, >= 0.5.3)
     pdfkit (0.6.2)
     pg (0.18.1)
-    puma (2.11.1)
-      rack (>= 1.1, < 2.0)
-    rack (1.6.0)
+    puma (2.16.0)
+    rack (1.6.4)
     rack-parser (0.6.1)
       rack
     rack-protection (1.5.3)
@@ -70,7 +69,7 @@ DEPENDENCIES
   nori
   pdfkit
   pg
-  puma
+  puma (~> 2.11)
   rack-parser
   rake
   sequel
@@ -78,3 +77,9 @@ DEPENDENCIES
   sinatra-flash
   sinatra-param
   sinatra_auth_github
+
+RUBY VERSION
+   ruby 2.0.0p648
+
+BUNDLED WITH
+   1.12.5

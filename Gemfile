@@ -1,7 +1,7 @@
 ruby '2.0.0'
 source "https://rubygems.org"
 
-gem 'puma'
+gem 'puma', '~> 2.11'
 gem 'sinatra'
 gem 'sinatra_auth_github'
 gem 'sinatra-param'
